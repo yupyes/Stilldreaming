@@ -13,13 +13,13 @@
      align-items: center;
      /* background-image: url('images/Backgroundweb.jpg'); */
      background-color: transparent;
-     padding-top: 20px;
+     padding-top: 30px;
      top:0;
      position: sticky;
  }
  header div{
      font-size: 30px;
-     font-family: Georgia, 'Times New Roman', Times, serif;
+     font-family:'Brush Script MT', 'cursive';
  }
  header h1{
      text-align: center;
@@ -29,8 +29,8 @@
      display: flex;
      justify-content: space-around;
      list-style-type: none;
-     padding-bottom: 10px;
-     padding-top: 5px;
+     padding-bottom: 100px;
+     padding-top: 20px;
  }
  .nav-bar a{
      font-size: 20px;
@@ -68,20 +68,20 @@
      width:100%;
  }
  img{
-     border: #893101 solid;
+     border: #1e4648 solid;
      border-radius: 10%;
-     margin-left: 30px;
+     margin-left: 470px;
  }
  ol{
      /* margin:5px; */
-     padding:30px;
+     padding:0px;
      list-style-type:upper-alpha;
  }
  
  .services-items td, .services-items th{
-     border:#893101 solid;
+     border:#a2968f solid;
      margin:0px;
-     padding:0px;
+     padding:80px;
      text-align: left;
  }
  /* th{
@@ -94,10 +94,13 @@
  }
  .services-items{
      border-collapse: collapse;
+     width: 300px;
+     height:500px;
+     border
  }
  form{
      width:fit-content;
-     padding:100px;
+     padding: 100px;
      margin:auto;
  }
  fieldset{
@@ -110,5 +113,19 @@
      width:160px;
  }
  body{
-    background-image: 5%;
+    background-image:5%;
+ }
+ p1{
+    font-size:100px;
+    text-align: center;
+ }
+ p2{
+    font-size:30px;
+ }
+ p3{
+    font-size:50px;
+ }
+ ol{
+    font-size:30px;
+    text-align: center;
  }
