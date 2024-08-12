@@ -4,6 +4,8 @@
  }
  body{
     background-image: url('images/Backgroundweb.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
  }
  header{
      width:100%;
