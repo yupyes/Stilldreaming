@@ -2,6 +2,9 @@
     margin:0px;
     padding:0px; 
  }
+ body{
+    background-image: url('images/Backgroundweb.jpg');
+ }
  header{
      width:100%;
      align-items: center;
