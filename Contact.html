@@ -1,18 +1,98 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> Contact me </title><!--title tag-->
+        <title> Contact </title><!--title tag-->
+        <body background="images/Backgroundweb.jpg"></body>
+        <link rel="stylesheet" href="margin.css">
+        <link rel="shortcut icon" href="images/EMMA_BRAT.jpg">
+        <script>
+            function validate()
+            {
+                let uname = document.contact.uname.value;
+                let phone = document.contact.phone.value;
+                let password = document.contact.pwd.value;
+                let cpassword = document.contact.cpwd.value;
+                let dob = document.contact.dob.value;
+                let email = document.contact.email.value;
+                let msg = document.contact.msg.value;
+                if(uname=="" || phone=="" || password=="" || cpassword=="" || email=="" || msg=="" || dob=="")
+                {
+                    alert("Fill in all the fields")
+                }
+                else{
+                    if(password.length <8 || password.length > 20)
+                        alert("Password should be between 8-20 characters long")
+                    else{
+                        if(password != cpassword)
+                            alert("Password and Confirm Password should match")
+                        else{
+                            if(phone.length != 10)
+                                alert("Phone number should be 10 digits")
+                            else{
+                                alert("Form submitted successfully!")
+                            }
+                        }
+                    }
+                }
+            }
+        </script>
     </head>
     <body>
         <header>
-            <h1>Services center</h1><!--heading tag-->
-            <h1> <!--unordered list-->
+            <div>
+                <h1>Services center</h1>
+            </div>
+            <u1 class="nav-bar">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="About.html">About</a></li> <!-- anchor tag -->
-                <li><a href="Contact.html">Contact us</a></li>
-                <li><a href="Booknow.html">Book now</a></li>
+                <li><a class="current" href="Contact.html">Contact</a></li>
+                <li><a href="Booknow.html">Book </a></li>
                 <li><a href="Services.html">Services</a></li>
-            </h1>
+            </u1>
         </header>
+        <div class="content">
+            <form name="contact">
+            <fieldset>
+            <legend>Contact</legend>
+                <table>
+                    <tr>
+                        <td><label for="uname">Name:</label></td>
+                        <td><input name="uname" type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Phone:</label></td>
+                        <td><input name="phone" type="tel"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Password:</label></td>
+                        <td><input name="pwd" type="password"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Confirm Password:</label></td>
+                        <td><input name="cpwd" type="password"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Email:</label></td>
+                        <td><input name="email" type="email"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Date of Birth:</label></td>
+                        <td><input name="dob" type="date"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Message:</label></td>
+                        <td><input name="msg" type="text"></td>
+                    </tr>
+                    <tr>
+                        <td align="center" colspan="2"><input type="submit" value="Submit" onclick="validate();"></td>
+                    </tr>
+                </table>
+            </fieldset>
+            </form>
+
+        </div>
+        <footer>
+            Copyright &copy; Still Dreaming Studio
+        </footer>
     </body>
 </html>
