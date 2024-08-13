@@ -68,21 +68,22 @@
      width:100%;
  }
  img{
-     border: #1e4648 solid;
+     border: #f9ffffdb solid;
      border-radius: 10%;
-     margin-left: 470px;
+     margin-left: 50px;
  }
  ol{
      /* margin:5px; */
      padding:0px;
      list-style-type:upper-alpha;
+     font-size:30px;
+     text-align: center;
  }
- 
  .services-items td, .services-items th{
      border:#a2968f solid;
      margin:0px;
-     padding:80px;
-     text-align: left;
+     padding:10px;
+     text-align: center;
  }
  /* th{
      border:#893101 solid;
@@ -94,9 +95,8 @@
  }
  .services-items{
      border-collapse: collapse;
-     width: 300px;
-     height:500px;
-     border
+     width: 500px;
+     height: 500px;
  }
  form{
      width:fit-content;
@@ -124,8 +124,4 @@
  }
  p3{
     font-size:50px;
- }
- ol{
-    font-size:30px;
-    text-align: center;
  }
